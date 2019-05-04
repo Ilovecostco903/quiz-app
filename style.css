@@ -47,10 +47,9 @@
   background-color: rgba(255, 255, 255, .8);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
   margin-top: 50px;
   text-align: center;
-
+  padding-top: 50px;
 
 }
 
@@ -72,8 +71,12 @@
 }
 
 #answers {
+  margin-bottom: 50px;
+}
+
+.form-container label {
   display: block;
-  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .question {
@@ -137,11 +140,14 @@
 
   }
 
-  .question, .correctAnswer {
-    font-size: 40px;
+  .question, .correctAnswer, .incorrectAnswer h1 {
+    font-size: 10vw;
     color: green;
   }
   
+  .question {
+    padding-top: 15px;
+  }
   .button {
     font-size: 20px;
     height: 50px;
@@ -152,7 +158,18 @@
     font-size: 40px;
     color: purple;
   }
+  
+  .gif {
+    width: 100%
+  }
 
+  .response h1 {
+    font-size: 9vw;
+  }
+
+  .answer-selection {
+    font-size: 30px;
+  }
 
 }
 
@@ -165,7 +182,7 @@
     font-size: 30px;
 
   }
-
+ 
   .question, .correctAnswer, .incorrectAnswer h1{
     font-size: 47px;
     color: blue;
@@ -175,6 +192,14 @@
     width: 200px;
   }
 
+  .gif {
+    width: 500px;
+    height: 500px;
+  }
+
+  .answer-selection {
+    font-size: 50px;
+  }
 
 }
 
@@ -188,8 +213,13 @@
 
   }
 
-  .question, .correctAnswer {
+  .question, .correctAnswer, .incorrectAnswer h1{
     font-size: 60px;
     color: red
+  }
+
+  .gif {
+    width: 500px;
+    height: 500px;
   }
 }
