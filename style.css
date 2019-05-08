@@ -154,18 +154,12 @@
     width: 150px;
   }
 
-  .incorrectAnswer h1 {
-    font-size: 40px;
-    color: purple;
-  }
   
   .gif {
     width: 100%
   }
 
-  .response h1 {
-    font-size: 9vw;
-  }
+
 
   .answer-selection {
     font-size: 30px;

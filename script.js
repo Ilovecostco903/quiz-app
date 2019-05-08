@@ -9,6 +9,7 @@ const storedData = [
     ans4: 'San Jose',
     correctAnswer: 'Springfield',
     img: 'https://i.dailymail.co.uk/i/pix/2012/04/11/article-2127965-128AA278000005DC-644_634x362.jpg',
+    alt: 'Picture of the city Springfield',
   },
 
   {
@@ -19,6 +20,7 @@ const storedData = [
     ans4: 'Chinese',
     correctAnswer: 'Donut',
     img: 'https://media.giphy.com/media/N04Fkkzhf9slO/source.gif',
+    alt: 'Homer eating donut',
   },
 
   {
@@ -29,6 +31,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Bart',
     img: 'https://media.giphy.com/media/sS9IVZUcfIw3S/giphy.gif',
+    alt: 'Bart blowing bubble',
   },
 
   {
@@ -39,6 +42,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Marge',
     img: 'https://media.giphy.com/media/l2JdZX8xyLZTY2gBW/source.gif',
+    alt: 'Marge groans',
   },
 
   {
@@ -49,6 +53,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Lisa',
     img: 'https://media.giphy.com/media/ahAqpIW3GR0sw/giphy.gif',
+    alt: 'Hipster Lisa',
   },
 
   {
@@ -59,6 +64,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Maggie',
     img: 'https://media.giphy.com/media/s6EYTqTRqujIY/giphy.gif',
+    alt: 'Maggie dancing',
   },
 
   {
@@ -69,6 +75,7 @@ const storedData = [
     ans4: 'Stay home dad',
     correctAnswer: 'Nuclear Power Plant',
     img: 'https://media.giphy.com/media/8EmeieJAGjvUI/giphy.gif',
+    alt: 'Homer destroying nuclear power plant control room',
   },
 
   {
@@ -79,6 +86,7 @@ const storedData = [
     ans4: `Moe's`,
     correctAnswer: `Moe's`,
     img: 'https://media.giphy.com/media/xT5LMWwcHmQqau1PFK/giphy.gif',
+    alt: `picture of Moe's bar`,
   },
 
   {
@@ -89,6 +97,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Mr. Burns',
     img: 'https://media.giphy.com/media/mSmF4o8LT36ec/giphy.gif',
+    alt: 'Mr. burns looking angelic',
   },
 
   {
@@ -99,6 +108,7 @@ const storedData = [
     ans4: 'Maggie',
     correctAnswer: 'Maggie',
     img: 'https://media.giphy.com/media/X3LZLfNMOLdGU/giphy.gif',
+    alt: 'Maggie shooting gun',
   },
 ];
 
@@ -184,7 +194,7 @@ function correctAnswer() {
           <div class="response">
             <h1>You got it correct!</h1>
           </div>
-        <img class="gif" src= "${storedData[questionNum].img}" alt="">
+        <img class="gif" src= "${storedData[questionNum].img}" alt="${storedData[questionNum].alt}">
         <button type="submit" class="js-next-button button"> Next </button>
         </div>
         `);
@@ -199,7 +209,7 @@ function incorrectAnswer() {
             <h1>You got it Incorrect!</h1>
             <h1>The correct answer is ${storedData[questionNum].correctAnswer}</h1>
           </div>
-        <img class="gif" src= "${storedData[questionNum].img}" alt="">
+        <img class="gif" src= "${storedData[questionNum].img}" alt="${storedData[questionNum].alt}">
         <button type="submit" class="js-next-button button"> Next </button>
         </div>
         `);
